@@ -1,0 +1,409 @@
+media:
+
+  input: .
+
+  output: /
+
+content:
+
+  - name: home
+
+    label: Home Page
+
+    type: file
+
+    path: site.json
+
+    format: json
+
+    fields:
+
+      - name: brand
+
+        label: Brand
+
+        type: string
+
+      - name: hero
+
+        label: Hero
+
+        type: object
+
+        fields:
+
+          - name: eyebrow
+
+            label: Small heading
+
+            type: string
+
+          - name: title
+
+            label: Main title
+
+            type: string
+
+          - name: emphasis
+
+            label: Emphasis
+
+            type: string
+
+          - name: text
+
+            label: Intro text
+
+            type: text
+
+          - name: image
+
+            label: Hero image
+
+            type: image
+
+      - name: idea
+
+        label: The Idea
+
+        type: object
+
+        fields:
+
+          - name: label
+
+            label: Section label
+
+            type: string
+
+          - name: title
+
+            label: Title
+
+            type: string
+
+          - name: paragraphs
+
+            label: Paragraphs
+
+            type: string
+
+            list: true
+
+      - name: statement
+
+        label: Experience Statement
+
+        type: object
+
+        fields:
+
+          - name: label
+
+            label: Section label
+
+            type: string
+
+          - name: title
+
+            label: Title
+
+            type: string
+
+          - name: emphasis
+
+            label: Emphasis
+
+            type: string
+
+          - name: text
+
+            label: Text
+
+            type: text
+
+      - name: opportunities
+
+        label: Opportunities
+
+        type: object
+
+        list: true
+
+        fields:
+
+          - name: number
+
+            label: Number
+
+            type: string
+
+          - name: title
+
+            label: Title
+
+            type: string
+
+          - name: text
+
+            label: Description
+
+            type: text
+
+      - name: approach
+
+        label: Approach
+
+        type: object
+
+        fields:
+
+          - name: label
+
+            label: Section label
+
+            type: string
+
+          - name: title
+
+            label: Title
+
+            type: string
+
+          - name: steps
+
+            label: Steps
+
+            type: object
+
+            list: true
+
+            fields:
+
+              - name: title
+
+                label: Title
+
+                type: string
+
+              - name: text
+
+                label: Description
+
+                type: text
+
+      - name: expertise
+
+        label: Local Expertise
+
+        type: object
+
+        fields:
+
+          - name: label
+
+            label: Section label
+
+            type: string
+
+          - name: title
+
+            label: Title
+
+            type: string
+
+          - name: paragraphs
+
+            label: Paragraphs
+
+            type: string
+
+            list: true
+
+          - name: image
+
+            label: Image
+
+            type: image
+
+      - name: manifest
+
+        label: Manifesto
+
+        type: object
+
+        fields:
+
+          - name: title
+
+            label: Title
+
+            type: string
+
+          - name: paragraphs
+
+            label: Paragraphs
+
+            type: string
+
+            list: true
+
+          - name: signature
+
+            label: Signature
+
+            type: string
+
+      - name: contact
+
+        label: Contact
+
+        type: object
+
+        fields:
+
+          - name: title
+
+            label: Title
+
+            type: string
+
+          - name: text
+
+            label: Text
+
+            type: text
+
+          - name: email
+
+            label: Email
+
+            type: string
+
+          - name: instagram
+
+            label: Instagram URL
+
+            type: string
+
+  - name: places
+
+    label: Places
+
+    type: file
+
+    files:
+
+      - name: tarifa
+
+        label: Tarifa
+
+        path: tarifa.json
+
+        format: json
+
+        fields:
+
+          - { name: name, label: Name, type: string }
+
+          - { name: subtitle, label: Subtitle, type: string }
+
+          - { name: image, label: Image, type: image }
+
+          - { name: intro, label: Introduction, type: text }
+
+          - { name: published, label: Published, type: boolean }
+
+      - name: algarve
+
+        label: Algarve
+
+        path: algarve.json
+
+        format: json
+
+        fields:
+
+          - { name: name, label: Name, type: string }
+
+          - { name: subtitle, label: Subtitle, type: string }
+
+          - { name: image, label: Image, type: image }
+
+          - { name: intro, label: Introduction, type: text }
+
+          - { name: published, label: Published, type: boolean }
+
+      - name: morocco
+
+        label: Morocco
+
+        path: morocco.json
+
+        format: json
+
+        fields:
+
+          - { name: name, label: Name, type: string }
+
+          - { name: subtitle, label: Subtitle, type: string }
+
+          - { name: image, label: Image, type: image }
+
+          - { name: intro, label: Introduction, type: text }
+
+          - { name: published, label: Published, type: boolean }
+
+      - name: costa_rica
+
+        label: Costa Rica
+
+        path: costa-rica.json
+
+        format: json
+
+        fields:
+
+          - { name: name, label: Name, type: string }
+
+          - { name: subtitle, label: Subtitle, type: string }
+
+          - { name: image, label: Image, type: image }
+
+          - { name: intro, label: Introduction, type: text }
+
+          - { name: published, label: Published, type: boolean }
+
+  - name: journal
+
+    label: Journal
+
+    type: file
+
+    files:
+
+      - name: welcome
+
+        label: Example Article
+
+        path: welcome.json
+
+        format: json
+
+        fields:
+
+          - { name: title, label: Title, type: string }
+
+          - { name: slug, label: Slug, type: string }
+
+          - { name: destination, label: Destination, type: string }
+
+          - { name: date, label: Date, type: date }
+
+          - { name: cover, label: Cover image, type: image }
+
+          - { name: excerpt, label: Excerpt, type: text }
+
+          - { name: published, label: Published, type: boolean }
+
+          - { name: body, label: Article, type: rich-text }
