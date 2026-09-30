@@ -1,0 +1,91 @@
+{
+  "brand": "AURUM396",
+  "hero": {
+    "eyebrow": "EXCEPTIONAL PLACES · MEANINGFUL PROJECTS",
+    "title": "Something you can",
+    "emphasis": "experience.",
+    "text": "Hidden gems, singular destinations and projects shaped by beauty, potential and local knowledge.",
+    "image": "assets/hero-costa-rica.jpeg"
+  },
+  "idea": {
+    "label": "THE IDEA",
+    "title": "Some places hold more potential than they reveal.",
+    "paragraphs": [
+      "We believe the most meaningful investments create more than financial value.",
+      "Aurum396 seeks hidden gems, remarkable locations and singular projects where beauty, authenticity and economic potential come together.",
+      "We bring together vision, local knowledge and the right people to reveal what makes each place exceptional."
+    ]
+  },
+  "statement": {
+    "label": "BEYOND THE INTANGIBLE",
+    "title": "Value you can",
+    "emphasis": "experience.",
+    "text": "Something you can see. Something you can touch. Somewhere you can go. An investment that becomes a place, an experience, a story of its own."
+  },
+  "opportunities": [
+    {
+      "number": "01",
+      "title": "Hidden Gems",
+      "text": "Distinctive places with character, history and untapped potential — waiting for the right vision to reveal their beauty."
+    },
+    {
+      "number": "02",
+      "title": "Places to Create",
+      "text": "Exceptional land and locations where a singular project can be imagined and created from the ground up."
+    },
+    {
+      "number": "03",
+      "title": "Projects to Join",
+      "text": "Carefully selected ventures taking shape in remarkable places and open to selected partners and investors."
+    }
+  ],
+  "approach": {
+    "label": "FROM VISION TO REALITY",
+    "title": "One point of contact. A network on the ground.",
+    "steps": [
+      {
+        "title": "Discover",
+        "text": "Places, opportunities & hidden gems"
+      },
+      {
+        "title": "Secure",
+        "text": "Due diligence, legal & notarial coordination"
+      },
+      {
+        "title": "Design",
+        "text": "Concept, architects & local expertise"
+      },
+      {
+        "title": "Build",
+        "text": "Contractors, craftsmen & project coordination"
+      },
+      {
+        "title": "Operate",
+        "text": "Hospitality expertise & local network"
+      }
+    ]
+  },
+  "expertise": {
+    "label": "GLOBAL VISION · LOCAL EXPERTISE",
+    "title": "We are there. We take care of it.",
+    "paragraphs": [
+      "Investing somewhere exceptional shouldn't mean navigating it alone. Aurum396 works with trusted local experts in every destination we operate in.",
+      "From identifying the right property or land to legal matters, permits, architecture, construction and local craftsmanship, we coordinate the people and expertise needed to turn each vision into reality."
+    ],
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=88"
+  },
+  "manifest": {
+    "title": "Something you can touch. Something you can live.",
+    "paragraphs": [
+      "We believe investment can become more than a figure on a screen. It can become a landscape, a place, a destination — something tangible that can be walked through, inhabited, shared and experienced.",
+      "We look for projects where economic value and beauty can strengthen one another, revealing the character that made the place worth discovering."
+    ],
+    "signature": "Value. Beauty. Experience."
+  },
+  "contact": {
+    "title": "Find your next place.",
+    "text": "Tell us what you are looking to create, acquire or join.",
+    "email": "hello@aurum396.com",
+    "instagram": ""
+  }
+}
