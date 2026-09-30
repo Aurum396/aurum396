@@ -1,8 +1,8 @@
 media:
 
-  input: .
+  input: media
 
-  output: /
+  output: /media
 
 content:
 
