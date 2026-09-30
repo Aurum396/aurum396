@@ -5,7 +5,7 @@
     "title": "Something you can",
     "emphasis": "experience.",
     "text": "Hidden gems, singular destinations and projects shaped by beauty, potential and local knowledge.",
-    "image": "assets/hero-costa-rica.jpeg"
+    "image": "/media/image.png"
   },
   "idea": {
     "label": "THE IDEA",
@@ -72,7 +72,7 @@
       "Investing somewhere exceptional shouldn't mean navigating it alone. Aurum396 works with trusted local experts in every destination we operate in.",
       "From identifying the right property or land to legal matters, permits, architecture, construction and local craftsmanship, we coordinate the people and expertise needed to turn each vision into reality."
     ],
-    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=88"
+    "image": "/media/54.png"
   },
   "manifest": {
     "title": "Something you can touch. Something you can live.",
@@ -85,7 +85,6 @@
   "contact": {
     "title": "Find your next place.",
     "text": "Tell us what you are looking to create, acquire or join.",
-    "email": "hello@aurum396.com",
-    "instagram": ""
+    "email": "hello@aurum396.com"
   }
 }
