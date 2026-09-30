@@ -72,21 +72,15 @@ content:
 
           - name: label
 
-            label: Section label
-
             type: string
 
           - name: title
-
-            label: Title
 
             type: string
 
           - name: paragraphs
 
-            label: Paragraphs
-
-            type: string
+            type: text
 
             list: true
 
@@ -100,25 +94,17 @@ content:
 
           - name: label
 
-            label: Section label
-
             type: string
 
           - name: title
-
-            label: Title
 
             type: string
 
           - name: emphasis
 
-            label: Emphasis
-
             type: string
 
           - name: text
-
-            label: Text
 
             type: text
 
@@ -134,19 +120,13 @@ content:
 
           - name: number
 
-            label: Number
-
             type: string
 
           - name: title
 
-            label: Title
-
             type: string
 
           - name: text
-
-            label: Description
 
             type: text
 
@@ -160,19 +140,13 @@ content:
 
           - name: label
 
-            label: Section label
-
             type: string
 
           - name: title
 
-            label: Title
-
             type: string
 
           - name: steps
-
-            label: Steps
 
             type: object
 
@@ -182,13 +156,9 @@ content:
 
               - name: title
 
-                label: Title
-
                 type: string
 
               - name: text
-
-                label: Description
 
                 type: text
 
@@ -202,27 +172,19 @@ content:
 
           - name: label
 
-            label: Section label
-
             type: string
 
           - name: title
-
-            label: Title
 
             type: string
 
           - name: paragraphs
 
-            label: Paragraphs
-
-            type: string
+            type: text
 
             list: true
 
           - name: image
-
-            label: Image
 
             type: image
 
@@ -236,21 +198,15 @@ content:
 
           - name: title
 
-            label: Title
-
             type: string
 
           - name: paragraphs
 
-            label: Paragraphs
-
-            type: string
+            type: text
 
             list: true
 
           - name: signature
-
-            label: Signature
 
             type: string
 
@@ -264,19 +220,13 @@ content:
 
           - name: title
 
-            label: Title
-
             type: string
 
           - name: text
 
-            label: Text
-
             type: text
 
           - name: email
-
-            label: Email
 
             type: string
 
@@ -290,101 +240,95 @@ content:
 
     label: Places
 
-    type: file
+    type: group
 
-    files:
+    items:
 
       - name: tarifa
 
         label: Tarifa
 
+        type: file
+
         path: tarifa.json
 
         format: json
 
-        fields:
+        fields: &place_fields
 
-          - { name: name, label: Name, type: string }
+          - name: slug
 
-          - { name: subtitle, label: Subtitle, type: string }
+            type: string
 
-          - { name: image, label: Image, type: image }
+          - name: name
 
-          - { name: intro, label: Introduction, type: text }
+            type: string
 
-          - { name: published, label: Published, type: boolean }
+          - name: subtitle
+
+            type: string
+
+          - name: image
+
+            type: image
+
+          - name: intro
+
+            type: text
+
+          - name: published
+
+            type: boolean
 
       - name: algarve
 
         label: Algarve
 
+        type: file
+
         path: algarve.json
 
         format: json
 
-        fields:
-
-          - { name: name, label: Name, type: string }
-
-          - { name: subtitle, label: Subtitle, type: string }
-
-          - { name: image, label: Image, type: image }
-
-          - { name: intro, label: Introduction, type: text }
-
-          - { name: published, label: Published, type: boolean }
+        fields: *place_fields
 
       - name: morocco
 
         label: Morocco
 
+        type: file
+
         path: morocco.json
 
         format: json
 
-        fields:
+        fields: *place_fields
 
-          - { name: name, label: Name, type: string }
-
-          - { name: subtitle, label: Subtitle, type: string }
-
-          - { name: image, label: Image, type: image }
-
-          - { name: intro, label: Introduction, type: text }
-
-          - { name: published, label: Published, type: boolean }
-
-      - name: costa_rica
+      - name: costa-rica
 
         label: Costa Rica
+
+        type: file
 
         path: costa-rica.json
 
         format: json
 
-        fields:
-
-          - { name: name, label: Name, type: string }
-
-          - { name: subtitle, label: Subtitle, type: string }
-
-          - { name: image, label: Image, type: image }
-
-          - { name: intro, label: Introduction, type: text }
-
-          - { name: published, label: Published, type: boolean }
+        fields: *place_fields
 
   - name: journal
 
     label: Journal
 
-    type: file
+    type: group
 
-    files:
+    items:
 
       - name: welcome
 
         label: Example Article
+
+        type: file
 
         path: welcome.json
 
@@ -392,18 +336,34 @@ content:
 
         fields:
 
-          - { name: title, label: Title, type: string }
+          - name: title
 
-          - { name: slug, label: Slug, type: string }
+            type: string
 
-          - { name: destination, label: Destination, type: string }
+          - name: slug
 
-          - { name: date, label: Date, type: date }
+            type: string
 
-          - { name: cover, label: Cover image, type: image }
+          - name: destination
 
-          - { name: excerpt, label: Excerpt, type: text }
+            type: string
 
-          - { name: published, label: Published, type: boolean }
+          - name: date
 
-          - { name: body, label: Article, type: rich-text }
+            type: date
+
+          - name: cover
+
+            type: image
+
+          - name: excerpt
+
+            type: text
+
+          - name: published
+
+            type: boolean
+
+          - name: body
+
+            type: rich-text
